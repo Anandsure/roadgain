@@ -7,6 +7,9 @@ RoadGain follows the Braess's Paradox (Phenomenon that adding a road segment to 
 Braess's Paradox results in inefficiencies that can up to double overall travel time in a network, so isolating and removing roads that are contributing to congestion can help alleviate traffic congestion. These road segments can be converted to pedestrian-friendly streets and plazas, which can make neighborhoods less congested, more small-business friendly, and more human-centric!
 This phenomenon has been repeatedly observed in the world, such as with the Cheonggyecheon Bridge in Seoul, South Korea, the road network in Stuttgart, Germany, or 42nd Street in New York City.
 
+### Backend
+We detect the roads that cause the congestion by using simple 10th grader triangle verification math. “If sum of any two sides is greater than the third , Verified” , its that simple. We also compute real world traffic data through all these sides from open street maps. If the time taken to traverse shortest side is greater than cumulative commute time of the other two sides, the shortest side can then be shut to increase traffic flow.
+
 ### Statistics
 1. Indians spend more time in daily office commute than people in most countries in the world, with more than 2 hours on the road every day.
 2. On an average Indians spend 7% of their day in commuting to office, averaging less than 3 minutes per kilometre. 
@@ -24,8 +27,9 @@ We also intend to deal the land saved by reducing a lane or street with the gove
 The yearly price for hosting and maintaining a website (frontend + backend) is approximately Rs. 15,000. 
 
 ### Profit
-Assuming we come up with a deal to receive Rs. 5,000 per sq. feet of redundant roads, we can find approximately thousands of sq. feet (let’s assume 1,000 sq. feet) in a metropoliton city. This way, we can earn about Rs. 50,000 per city.
-There are 4,000 cities in India according to nriol.com. Joining the dots, we now have a potential of Rs. 4,000 x 1,000 sq. feet= Rs. 40,00,000 with just one country- India.
+Assuming we come up with a deal to receive Rs. 500 per sq. feet of redundant roads, we can find approximately thousands of sq. feet (let’s assume lowest case 1,000 sq. feet) in a metropolitan city. This way, we can earn about Rs. 5,00,000 per city. There are 4,000 cities in India according to nriol.com. Joining the dots, we now have a potential of ,
+Rs. 4,000 x 5,00,000 sq. feet= A LOT OF MONEY
+In just one country- India.
 There are 195 countries in the world. Our profit margin can go really high!
 
 ### Competitors
